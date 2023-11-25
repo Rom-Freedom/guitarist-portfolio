@@ -1,6 +1,13 @@
 @import "normalizez.scss"
 @import "resets.scss"
 
+*
+    box-sizing: border-box 
+
+$color-blue: #5290EA
+$color-orange: #F28B64
+$color-grey: #E2E2E2
+
 .container
     max-width: 1140px
     margin: 0 auto
@@ -15,6 +22,8 @@
         justify-content: space-between
         height: 69px
         align-items: center
+    &__logo
+        width: 134px
 
 .nav-menu
     &__list
@@ -25,3 +34,43 @@
         font-size: 18px
         &:last-child
             margin-right: 0
+
+.left-wrapper
+    position: relative
+    img
+        position: relative
+        z-index: 5
+    &__rectangle-blue
+        position: absolute
+        top: 150px
+        left: -50px
+        width: 567px
+        height: 220px
+        background: $color-blue
+        border-radius: 100px
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        transform: rotate(-64.003deg)
+        z-index: 2
+    &__rectangle-orange
+        position: absolute
+        width: 618.428px
+        height: 220px
+        top: 160px
+        left: -30px
+        transform: rotate(-50.806deg)
+        border-radius: 100px
+        background: $color-orange
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        z-index: 3
+    &__rectangle-grey
+        position: absolute
+        width: 608.968px
+        height: 220px
+        top: 190px
+        left: 10px
+        transform: rotate(-36.15deg)
+        border-radius: 100px
+        background: $color-grey
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25)
+        z-index: 1
+        
