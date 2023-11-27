@@ -2,7 +2,23 @@
 @import "resets.scss"
 
 *
-    box-sizing: border-box 
+    box-sizing: border-box
+
+@font-face 
+    font-family: "Montserrat!"
+    src: url('../fonts/Montserrat-Regular.ttf')
+    font-weight: regular
+    font-style: normal
+
+@font-face 
+    font-family: "Montserrat!"
+    src: url('../fonts/Montserrat-SemiBold.ttf')
+    font-weight: bold
+    font-style: normal
+
+html
+    font-family: "Montserrat!"
+    font-weight: regular
 
 $color-blue: #5290EA
 $color-orange: #F28B64
@@ -229,6 +245,7 @@ $color-grey: #E2E2E2
         transform: rotate(90deg)
         top: 144px
         right: -45px
+        font-weight: bold
 
 .cards-item__orange
     background: $color-orange
@@ -246,6 +263,7 @@ $color-grey: #E2E2E2
         font-size: 18px
         span
             font-size: 48px
+            font-weight: bold
 
 .third-section
     position: relative
@@ -279,11 +297,23 @@ $color-grey: #E2E2E2
         z-index: -1
     &__second-elipse
         position: absolute
-        right: -200px
+        right: -120px
         top: -120px
 
 .title__hr_top
     bottom: 75px
-    
+
+.footer
+    &__img
+        position: absolute
+        left: -250px
+        bottom: 0
+    &__container
+        mix: 272px
+        display: flex
+        align-items: center
+        justify-content: flex-end
+    &__title
+        margin-bottom: 20px
         
         
