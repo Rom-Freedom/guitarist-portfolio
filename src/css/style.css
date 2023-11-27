@@ -378,6 +378,7 @@ table {
 html {
   font-family: "Montserrat!";
   font-weight: regular;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -434,7 +435,6 @@ html {
   margin-right: 0px;
 }
 .nav-menu__list-item a {
-  cursor: pointer;
   text-decoration: none;
   color: black;
 }
