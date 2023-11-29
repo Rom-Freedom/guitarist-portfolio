@@ -365,13 +365,13 @@ table {
 
 @font-face {
   font-family: "Montserrat!";
-  src: url("../fonts/Montserrat-Regular.ttf");
+  src: url("/fonts/Montserrat-Regular.ttf");
   font-weight: regular;
   font-style: normal;
 }
 @font-face {
   font-family: "Montserrat!";
-  src: url("../fonts/Montserrat-SemiBold.ttf");
+  src: url("/fonts/Montserrat-SemiBold.ttf");
   font-weight: bold;
   font-style: normal;
 }
@@ -587,6 +587,7 @@ html {
 }
 
 .second-section {
+  overflow: hidden;
   min-height: 700px;
 }
 .second-section__container {
@@ -598,6 +599,7 @@ html {
 }
 .second-section__cards-box {
   display: inline-flex;
+  justify-content: center;
   margin-bottom: 25px;
 }
 .second-section__cards-item {
@@ -733,4 +735,92 @@ html {
 }
 .footer__title {
   margin-bottom: 20px;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 960px;
+  }
+  .container .main-section__logo {
+    width: 134px;
+  }
+  .container img {
+    width: 750px;
+  }
+  .container__rectangle-blue {
+    width: 588px;
+    height: 200px;
+  }
+  .container__rectangle-orange {
+    width: 550px;
+    height: 200px;
+  }
+  .container__rectangle-grey {
+    width: 550px;
+    height: 200px;
+  }
+  .right-wrapper {
+    right: -20px;
+  }
+  .main-section__first-elipse {
+    right: -5px;
+  }
+  .buttons__icon-btn {
+    width: 100px;
+  }
+  .second-setion {
+    min-height: 600px;
+  }
+  .second-setion__cards-box {
+    display: flex;
+    justify-content: center;
+  }
+  .cards-item {
+    width: 300px;
+    height: 300px;
+  }
+  .cards-item__img {
+    height: 270px;
+  }
+  .cards-item__text {
+    font-size: 30px;
+  }
+  .icons-item {
+    width: 200px;
+  }
+  .icons-item__img {
+    margin-right: 10px;
+  }
+  .third-section__container {
+    padding-left: 40px;
+  }
+  .third-section__right-wrapper {
+    max-width: 450px;
+  }
+  .third-section__figure {
+    width: 250px;
+    height: 250px;
+    left: -232px;
+  }
+  .footer__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    width: 720px;
+  }
+  .left-wrapper img {
+    width: 550px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
