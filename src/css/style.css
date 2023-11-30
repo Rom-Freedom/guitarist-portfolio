@@ -932,8 +932,28 @@ html {
   .container {
     width: 540px;
   }
+  .main-section__logo {
+    margin-left: -190px;
+  }
   .nav-menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 50%;
+    height: 100vh;
+    background: aqua;
+    z-index: 20;
+    transition: 0.7s all;
+  }
+  .nav-menu__list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+  .nav-menu__list-item {
+    margin-right: 0;
+    font-size: 20px;
   }
   .hamburger {
     position: absolute;
@@ -964,6 +984,9 @@ html {
   }
   .hamburger_active span:nth-child(3) {
     transform: translateY(3px) rotate(45deg);
+  }
+  .nav-menu_active {
+    right: 0px;
   }
 }
 @media (max-width: 575px) {
