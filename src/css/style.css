@@ -366,6 +366,7 @@ table {
 @font-face {
   font-family: "Montserrat!";
   src: url("/fonts/Montserrat-Regular.ttf");
+  @font-display : swap;
   font-weight: regular;
   font-style: normal;
 }
