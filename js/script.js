@@ -16,7 +16,6 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-<script>
   $(document).ready(function(){
   $("a[href*='#']").on("click", function(e){
     var anchor = $(this);
@@ -27,4 +26,3 @@ window.addEventListener('DOMContentLoaded', () => {
     return false;
   });
 });
-</script>
